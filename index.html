@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
 
+    <!-- Google Font Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
      <!-- tailwind css & DaisyUI Links -->
 
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -14,28 +20,56 @@
 
      <script src="https://kit.fontawesome.com/e9a68d0d37.js" crossorigin="anonymous"></script>
 
-     <!-- Tailwind CSS Configuration -->
-
-     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: 'rgb(139, 195, 74)',
-                        secondary: 'rgb(17, 17, 17)',
-                        body: 'rgb(248, 246, 243)',
-                        accent: 'rgb(106, 151, 57)',
-                        body_neutral: 'rgb(51, 51, 51)',
-                    },
-                    fontFamily: {
-                        Poppins: 'Poppins',
-                    },
-                },
-            },
-        }
-    </script>
+     <style>
+        .font-manrope{
+  font-family: "Manrope", sans-serif;
+}
+     </style>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="w-11/12 mx-auto">
+        <!-- Navbar Section -->
+         <nav>
+            <div class="navbar p-0 my-10">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-3xl font-extrabold"><span class="-rotate-45 text-xs bg-[#ABEF5F] p-2 rounded-full"><i class="fa-solid fa-arrow-right-long"></i></span>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="hover:font-bold transition-all duration-300"><a>Home</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Services</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Portfolio</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Blogs</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div class="invisible sm:visible space-x-4">
+                    <span class="bg-white drop-shadow-md p-3 rounded-full"><i class="fa-solid fa-magnifying-glass text-slate-300"></i></span>
+                    <span class="bg-white drop-shadow-md p-3 rounded-full"><i class="fa-solid fa-cart-shopping text-slate-300"></i></span>
+                    <a class="btn bg-[#ABEF5F]">Button <span class="-rotate-45 text-xs bg-black text-white p-2 rounded-full"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                       <span class="bg-white drop-shadow-md p-3 rounded-full"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-2">
+                      <li class="hover:font-bold transition-all duration-300"><a>Home</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Services</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Portfolio</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Blogs</a></li>
+                    <li class="hover:font-bold transition-all duration-300"><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+         </nav>
+         <!-- Banner Section -->
+          <div>
+
+          </div>
+    </header>
 </body>
 </html>
