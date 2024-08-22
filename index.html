@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment</title>
+  <link rel="shortcut icon" href="./assignment logo.png" type="image/x-icon">
 
   <!-- Google Font Link -->
 
@@ -50,12 +51,13 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <div class="invisible sm:visible space-x-4">
+          <div class="hidden sm:block space-x-4">
             <span class="bg-white drop-shadow-md p-3 rounded-full"><i
-                class="fa-solid fa-magnifying-glass text-slate-300"></i></span>
+                class="fa-solid fa-magnifying-glass text-gray-500"></i></span>
             <span class="bg-white drop-shadow-md p-3 rounded-full"><i
-                class="fa-solid fa-cart-shopping text-slate-300"></i></span>
-            <a class="btn bg-[#ABEF5F]">Button <span class="-rotate-45 text-xs bg-black text-white p-2 rounded-full"><i
+                class="fa-solid fa-cart-shopping text-gray-500"></i></span>
+            <a class="btn bg-[#ABEF5F] font-extrabold">Book Consult <span
+                class="-rotate-45 text-xs bg-black text-white p-2 rounded-full"><i
                   class="fa-solid fa-arrow-right-long"></i></span></a>
           </div>
           <div class="dropdown">
@@ -93,9 +95,10 @@
   <!-- Main Section -->
   <main>
     <!-- We design thoughtful, liveable spaces -->
+
     <div class="bg-[#f4f4f474] py-24 px-4 lg:px-36 relative">
       <div class="absolute top-14">
-        <img class="invisible lg:visible" src="./assets/Vector.png" alt="">
+        <img class="hidden lg:block" src="./assets/Vector.png" alt="">
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-9">
         <div
@@ -132,6 +135,78 @@
         </div>
         <div>
           <img src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card & Number Section (Optional) -->
+    <div class="bg-[#f4f4f474] px-4 lg:px-36">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 drop-shadow-lg bg-white rounded-3xl gap-5 py-5">
+        <div class="stat place-items-center">
+          <div class="stat-title"><i class="fa-regular fa-message text-3xl"></i></div>
+          <div class="stat-value">235+</div>
+          <div class="stat-desc">Happy Client Review</div>
+        </div>
+
+        <div class="stat place-items-center">
+          <div class="stat-title text-slate-600"><i class="fa-regular fa-building text-3xl"></i></div>
+          <div class="stat-value text-secondary text-gray-800">50+</div>
+          <div class="stat-desc text-secondary text-gray-800 opacity-50">Work Departments</div>
+        </div>
+
+        <div class="stat place-items-center">
+          <div class="stat-title"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-value">30k+</div>
+          <div class="stat-desc">Our Happy Client</div>
+        </div>
+
+        <div class="stat place-items-center">
+          <div class="stat-title"><i class="fa-solid fa-user-group text-3xl"></i></div>
+          <div class="stat-value">307+</div>
+          <div class="stat-desc">Staff Members</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Works Process -->
+
+    <div class="bg-[#f4f4f474] py-24 px-4 lg:px-36">
+      <div class="text-center space-y-6 mb-8">
+        <button class="btn rounded-full bg-white text-[#494949] font-bold"><span><i
+              class="fa-solid fa-arrow-right-long"></i></span> How we works</button>
+        <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl text-black">Our Works Process</h2>
+        <p class=" text-[#494949e4]">The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card bg-[#E7C1D3] w-full">
+          <div class="card-body">
+            <img class="w-10 h-10" src="./assets/concept.png" alt="">
+            <h2 class="card-title font-extrabold">Concept</h2>
+            <p class="text-[#494949]">A "concept" is a general idea or understanding of something, often formed by combining various facts,
+              thoughts.</p>
+          </div>
+        </div>
+        <div class="card bg-[#EFDA6E] w-full">
+          <div class="card-body">
+            <img class="w-10 h-10" src="./assets/flow-chart.png" alt="">
+            <h2 class="card-title font-extrabold">Design Process</h2>
+            <p class="text-[#494949]">The design process is a structured approach to problem-solving that is often used in fields like engineering.</p>
+          </div>
+        </div>
+        <div class="card bg-[#A4DAC3] w-full">
+          <div class="card-body">
+            <img class="w-10 h-10" src="./assets/concept.png" alt="">
+            <h2 class="card-title font-extrabold">Supervision</h2>
+            <p class="text-[#494949]">Supervision, refers to the act of overseeing people to ensure that everything is done according to established standards. </p>
+          </div>
+        </div>
+        <div class="card bg-[#77AAEA] w-full">
+          <div class="card-body">
+            <img class="w-10 h-10" src="./assets/budget-planning.png" alt="">
+            <h2 class="card-title font-extrabold">Budget Planning</h2>
+            <p class="text-[#494949]">Budget planning is the process of creating a plan to manage your finances, like a month or a year.</p>
+          </div>
         </div>
       </div>
     </div>
