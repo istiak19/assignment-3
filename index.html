@@ -22,15 +22,33 @@
 
   <script src="https://kit.fontawesome.com/e9a68d0d37.js" crossorigin="anonymous"></script>
 
-  <style>
-    .font-manrope {
-      font-family: "Manrope", sans-serif;
+  <!-- Tailwind CSS Configuration -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg_color: '#ABEF5F',
+            body: '#f4f4f474',
+            card_1: '#E7C1D3',
+            card_2: '#EFDA6E',
+            card_3: '#A4DAC3',
+            card_4: '#77AAEA',
+            body_footer: '#1C1C1C',
+          },
+          fontFamily: {
+            Manrope: 'Manrope',
+          },
+        },
+      },
     }
-  </style>
+  </script>
 </head>
 
-<body class="font-manrope">
+<body class="font-Manrope">
   <!-- Heading Section -->
+
   <header class="w-11/12 mx-auto">
     <!-- Navbar Section -->
 
@@ -38,7 +56,7 @@
       <div class="navbar p-0 my-4">
         <div class="navbar-start">
           <a class="btn btn-ghost text-3xl font-extrabold"><span
-              class="-rotate-45 text-xs bg-[#ABEF5F] p-2 rounded-full"><i
+              class="-rotate-45 text-xs bg-bg_color p-2 rounded-full"><i
                 class="fa-solid fa-arrow-right-long"></i></span>Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -56,7 +74,7 @@
                 class="fa-solid fa-magnifying-glass text-gray-500"></i></span>
             <span class="bg-white drop-shadow-md p-3 rounded-full"><i
                 class="fa-solid fa-cart-shopping text-gray-500"></i></span>
-            <a class="btn bg-[#ABEF5F] font-extrabold">Book Consult <span
+            <a class="btn bg-bg_color font-extrabold rounded-full">Book Consult <span
                 class="-rotate-45 text-xs bg-black text-white p-2 rounded-full"><i
                   class="fa-solid fa-arrow-right-long"></i></span></a>
           </div>
@@ -83,7 +101,7 @@
       <div class="text-center space-y-6">
         <h1 class="text-2xl sm:text-4xl lg:text-7xl font-extrabold">A barn house of this design has a striking
           appearance</h1>
-        <p class="font-medium text-[#494949]">A barn house of this design has a striking appearance" suggests that the
+        <p class="font-medium text-[#494949]">A barn house of this design has a striking appearance suggests that the
           barn-style house being referred to is visually impactful and memorable <br> due to its unique or notable
           design features.</p>
       </div>
@@ -92,11 +110,12 @@
             class="fa-solid fa-arrow-right-long text-xs"></i></span></button>
     </div>
   </header>
+
   <!-- Main Section -->
   <main>
     <!-- We design thoughtful, liveable spaces -->
 
-    <div class="bg-[#f4f4f474] py-24 px-4 lg:px-36 relative">
+    <div class="bg-body py-24 px-4 lg:px-36 relative">
       <div class="absolute top-14">
         <img class="hidden lg:block" src="./assets/Vector.png" alt="">
       </div>
@@ -106,7 +125,7 @@
           <button class="btn rounded-full bg-white text-[#494949] font-bold"><span><i
                 class="fa-solid fa-arrow-right-long"></i></span> About Us</button>
           <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl text-black">We design thoughtful, liveable spaces</h2>
-          <p class=" text-[#494949e4]">We design thoughtful, livable spaces" is often used by architects, interior
+          <p class=" text-[#494949e4]">We design thoughtful, livable spaces is often used by architects, interior
             designers, or real estate developers to describe their approach to creating environments that are both
             aesthetically pleasing and functional. </p>
           <div class="flex flex-col md:flex-row lg:flex-col gap-6">
@@ -142,7 +161,7 @@
 
     <!-- Card & Number Section (Optional) -->
 
-    <div class="bg-[#f4f4f474] px-4 lg:px-36">
+    <div class="bg-body px-4 lg:px-36">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 drop-shadow-lg bg-white rounded-3xl gap-5 py-5">
         <div class="stat place-items-center">
           <div class="stat-title"><i class="fa-regular fa-message text-3xl"></i></div>
@@ -172,17 +191,17 @@
 
     <!-- Our Works Process -->
 
-    <div class="bg-[#f4f4f474] py-24 px-4 lg:px-36">
+    <div class="bg-body py-24 px-4 lg:px-36">
       <div class="text-center space-y-6 mb-8">
         <button class="btn rounded-full bg-white text-[#494949] font-bold"><span><i
               class="fa-solid fa-arrow-right-long"></i></span> How we works</button>
         <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl text-black">Our Works Process</h2>
-        <p class=" text-[#494949e4]">Our Works Process" refers to a section often found on a company’s website, project
+        <p class=" text-[#494949e4]">Our Works Process refers to a section often found on a company’s website, project
           portfolio, or presentation, where the <br> organization outlines the steps or methodology they follow to
           complete their work or projects.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="card bg-[#E7C1D3] w-full">
+        <div class="card bg-card_1 w-full">
           <div class="card-body">
             <img class="w-10 h-10" src="./assets/concept.png" alt="">
             <h2 class="card-title font-extrabold">Concept</h2>
@@ -191,7 +210,7 @@
               thoughts.</p>
           </div>
         </div>
-        <div class="card bg-[#EFDA6E] w-full">
+        <div class="card bg-card_2 w-full">
           <div class="card-body">
             <img class="w-10 h-10" src="./assets/flow-chart.png" alt="">
             <h2 class="card-title font-extrabold">Design Process</h2>
@@ -199,7 +218,7 @@
               in fields like engineering.</p>
           </div>
         </div>
-        <div class="card bg-[#A4DAC3] w-full">
+        <div class="card bg-card_3 w-full">
           <div class="card-body">
             <img class="w-10 h-10" src="./assets/concept.png" alt="">
             <h2 class="card-title font-extrabold">Supervision</h2>
@@ -207,7 +226,7 @@
               done according to established standards. </p>
           </div>
         </div>
-        <div class="card bg-[#77AAEA] w-full">
+        <div class="card bg-card_4 w-full">
           <div class="card-body">
             <img class="w-10 h-10" src="./assets/budget-planning.png" alt="">
             <h2 class="card-title font-extrabold">Budget Planning</h2>
@@ -274,7 +293,7 @@
 
     <!-- Read Our Articles and News -->
 
-    <div class="bg-[#f4f4f474] py-24 px-4 lg:px-36">
+    <div class="bg-body py-24 px-4 lg:px-36">
       <div class="text-center space-y-5 mb-8">
         <button class="btn rounded-full bg-[rgba(172,239,95,0.2)] text-[#494949] font-bold"><span><i
               class="fa-solid fa-arrow-right-long"></i></span> Rinterio News</button>
@@ -363,16 +382,61 @@
           placeholder="Write your message here"></textarea>
       </div>
       <div class="px-6 md:px-20 lg:px-60 mt-5">
-        <button class="btn bg-[#ABEF5F] font-extrabold w-full rounded-full">Send Mail <span
+        <button class="btn bg-bg_color font-extrabold w-full rounded-full">Send Mail <span
             class="-rotate-45 text-xs bg-black text-white p-2 rounded-full"><i
               class="fa-solid fa-arrow-right-long"></i></span></button>
       </div>
     </div>
+
+    <!-- Create a relevant and meaningful section of my own -->
+
+    <div class="w-11/12 mx-auto mt-24">
+      <h3 class="font-bold text-2xl md:text-3xl lg:text-4xl text-black text-center">Frequently Asked <span
+          class="text-[#E76F51]">Questions</span></h3>
+      <div class="hero min-h-screen my-10">
+        <div class="hero-content flex-col lg:flex-row gap-x-6">
+          <img src="./assets/faq.png" class="max-w rounded-lg" />
+          <div class="space-y-2">
+            <div class="collapse collapse-arrow border rounded-lg">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What are the most important things I should
+                know about commercial.?</div>
+              <div class="collapse-content">
+                <p class="text-[#7E848C]">Commercial refers to properties used for business purposes, such as office
+                  buildings, retail spaces, hotels, and industrial warehouses.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-lg">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">What are the most important things I should
+                know about residential?</div>
+              <div class="collapse-content">
+                <p>Residential</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-lg">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">What rules should I follow when commercial?</div>
+              <div class="collapse-content">
+                <p>Commercial</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border rounded-lg">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">What rules should I follow when residential?</div>
+              <div class="collapse-content">
+                <p>Residential</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
-    <div class="text-center bg-[#1C1C1C] py-16 lg:py-24 px-8 lg:px-80 space-y-5">
+    <div class="text-center bg-body_footer py-16 lg:py-24 px-8 lg:px-80 space-y-5">
       <button class="btn btn-ghost text-3xl font-extrabold text-[#E9E9E9]"><span
-          class="-rotate-45 text-xs bg-[#ABEF5F] p-2 rounded-full"><i
+          class="-rotate-45 text-xs bg-bg_color p-2 rounded-full"><i
             class="fa-solid fa-arrow-right-long text-black"></i></span>Rinterio</button>
       <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication,
         featuring weathered wood, sleek metal accents.</p>
@@ -383,7 +447,7 @@
         <a class="link link-hover">Blogs</a>
         <a class="link link-hover">Contact Us</a>
       </nav>
-      <button class="btn bg-[#ABEF5F] font-extrabold">Book Consult <span
+      <button class="btn bg-[#ABEF5F] font-extrabold w-full sm:w-52 rounded-full">Book Consult <span
           class="-rotate-45 text-xs bg-black text-white p-2 rounded-full"><i
             class="fa-solid fa-arrow-right-long"></i></span></button>
     </div>
